@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Menu các Món Ăn";
 }
 
 <!DOCTYPE html>
@@ -14,35 +14,53 @@
             background-color: #f4f7fc;
             font-family: 'Arial', sans-serif;
         }
+
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin-top: 50px;
         }
-        .privacy-header {
-            background-color: #007bff;
+
+        .menu-header {
+            background-color: #28a745;
             color: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .privacy-header h1 {
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-        .privacy-content {
+
+            .menu-header h1 {
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+
+        .menu-content {
             background-color: #ffffff;
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
             margin-top: 30px;
         }
-        .privacy-content p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: #333;
-        }
+
+            .menu-content ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .menu-content li {
+                font-size: 1.1rem;
+                line-height: 1.6;
+                color: #333;
+                margin-bottom: 15px;
+            }
+
+                .menu-content li h5 {
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                    color: #007bff;
+                }
+
         .footer {
-            background-color: #007bff;
+            background-color: #28a745;
             color: white;
             text-align: center;
             padding: 15px;
@@ -54,17 +72,42 @@
 <body>
 
     <div class="container">
-        <div class="privacy-header">
+        <div class="menu-header">
             <h1>@ViewData["Title"]</h1>
         </div>
 
-        <div class="privacy-content">
-            <p>Use this page to detail your site's privacy policy. This is a placeholder content where you can outline how you handle user data, what information is collected, and how it's protected. You can customize this to match your privacy policy requirements.</p>
+        <div class="menu-content">
+            <ul>
+                <li>
+                    <h5>Phở Bò</h5>
+                    <p>A traditional Vietnamese dish made of beef broth, rice noodles, herbs, and meat, usually beef.</p>
+                </li>
+                <li>
+                    <h5>Bánh Mì</h5>
+                    <p>A Vietnamese sandwich made with a crispy baguette, filled with a variety of ingredients such as meats, vegetables, and sauces.</p>
+                </li>
+                <li>
+                    <h5>Gỏi Cuốn</h5>
+                    <p>Fresh spring rolls filled with shrimp, herbs, rice vermicelli, and lettuce wrapped in rice paper.</p>
+                </li>
+                <li>
+                    <h5>Cơm Tấm</h5>
+                    <p>Broken rice served with grilled pork, but can be accompanied by other meats or seafood, topped with fried shallots.</p>
+                </li>
+                <li>
+                    <h5>Chả Cá Lã Vọng</h5>
+                    <p>A specialty from Hanoi, it consists of grilled fish served with rice noodles and various herbs and sauces.</p>
+                </li>
+                <li>
+                    <h5>Canh Chua</h5>
+                    <p>A sour soup made with tamarind, tomatoes, pineapple, and various herbs, commonly served with fish or pork.</p>
+                </li>
+            </ul>
         </div>
     </div>
 
     <footer class="footer">
-        <p>&copy; 2025 - Trần Hữu Thuận nè</p>
+        <p>&copy; 2025 - HUHIU - Trần Hữu Thuận</p>
     </footer>
 
 </body>
