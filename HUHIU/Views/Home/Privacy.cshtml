@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - HUHIU</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+        body {
+            background-color: #f4f7fc;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin-top: 50px;
+        }
+        .privacy-header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .privacy-header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .privacy-content {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            margin-top: 30px;
+        }
+        .privacy-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #333;
+        }
+        .footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="privacy-header">
+            <h1>@ViewData["Title"]</h1>
+        </div>
+
+        <div class="privacy-content">
+            <p>Use this page to detail your site's privacy policy. This is a placeholder content where you can outline how you handle user data, what information is collected, and how it's protected. You can customize this to match your privacy policy requirements.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 - HUHIU</p>
+    </footer>
+
+</body>
+</html>
